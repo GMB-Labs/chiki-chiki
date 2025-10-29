@@ -14,7 +14,7 @@ export const AuthProviderWithNavigate = ({ children }: Props) => {
   const audience = "https://foodlytics/api/v1/auth";
 
   const onRedirectCallback = (appState: any) => {
-    navigate(appState?.returnTo || window.location.pathname);
+navigate(appState?.returnTo || window.location.pathname);
   };
 
   return (
