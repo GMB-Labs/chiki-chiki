@@ -11,7 +11,7 @@ export const AuthProviderWithNavigate = ({ children }: Props) => {
 
   const domain = "dev-ydl81668b887kqqx.us.auth0.com";
   const clientId = "pskF9kqKBDJWinlthdQNlgnX1UThMlfm";
-  const audience = "https://foodlytics/api/v1";
+  const audience = "https://foodlytics/api/v1/auth";
 
   const onRedirectCallback = (appState: any) => {
     navigate(appState?.returnTo || window.location.pathname);
